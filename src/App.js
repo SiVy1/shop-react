@@ -5,11 +5,15 @@ import Main from './components/main';
 import { useState } from 'react';
 
 function App() {
-  const [cartItems, addCartItems] = useState(0)
+  const [cartCount, addCartCount] = useState(0)
+  const [cartItems, addCartItems] = useState([])
   return (
     <div className="App">
-      <Navbar itemCount={cartItems}/>
-      <Main addCartItems={addCartItems}/>
+      <Navbar itemCount={cartCount}/>
+      <Main 
+      addCartCount={addCartCount} 
+      addCartItems={addCartItems}
+      />
     </div>
   );
 }

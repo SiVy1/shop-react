@@ -18,6 +18,9 @@
     .nav-cart{
         margin-left: auto;
         position: relative;
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
         .cart-items{
             position: absolute;
             right: 0;
@@ -27,6 +30,12 @@
             color: #EAF6FF;
             width: 25px;
             height: 25px;
+            padding: 2px;
+        }
+        .cart-con{
+            background-color: #EAF6FF;
+            border-radius: 10px;
+            padding: 10px;
         }
     }
     .cart-icon{

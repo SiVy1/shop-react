@@ -25,6 +25,16 @@
 .navbar .nav-cart {
   margin-left: auto;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .navbar .nav-cart .cart-items {
@@ -36,6 +46,13 @@
   color: #EAF6FF;
   width: 25px;
   height: 25px;
+  padding: 2px;
+}
+
+.navbar .nav-cart .cart-con {
+  background-color: #EAF6FF;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 .navbar .cart-icon {
