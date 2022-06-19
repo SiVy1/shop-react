@@ -1,0 +1,37 @@
+[
+    {
+      "id": 0,
+      "name": "Coca-Cola",
+      "price": "3,19zł",
+      "size": "330ml",
+      "img": "coca-cola.png"
+    },
+    {
+      "id": 1,
+      "name": "Woda mineralna Żywiec Zdrój",
+      "price": "2,05zł",
+      "size": "500ml",
+      "img": "water.png"
+    },
+    {
+      "id": 2,
+      "name": "Mountain Dew",
+      "price": "2,70zł",
+      "size": "330ml",
+      "img": "mountain-dew.png"
+    },
+    {
+      "id": 3,
+      "name": "KIT KAT CHRUNKY WHITE",
+      "price": "1,99zł",
+      "size": "40G",
+      "img": "kit-kat.png"
+    },
+    {
+      "id": 4,
+      "name": "Lavazza Expert Gusto Forte",
+      "price": "42,90 zł",
+      "size": "1KG",
+      "img": "lavazza.png"
+    }
+  ]

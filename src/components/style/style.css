@@ -1,0 +1,116 @@
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 3rem;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 0.5rem;
+}
+
+.navbar .search-bar {
+  height: 1.5rem;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+.navbar .search-bar:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px 10px 0px 0px;
+}
+
+.navbar .nav-cart {
+  margin-left: auto;
+  position: relative;
+}
+
+.navbar .nav-cart .cart-items {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-radius: 100%;
+  background-color: #009FFD;
+  color: #EAF6FF;
+  width: 25px;
+  height: 25px;
+}
+
+.navbar .cart-icon {
+  height: 3rem;
+  margin-left: auto;
+}
+
+.Main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 300px))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Main .product {
+  height: 400px;
+  padding: 1rem;
+}
+
+.Main .product-img-con {
+  position: relative;
+  background-color: #FFA400;
+  border-radius: 10px;
+}
+
+.Main .product-img {
+  height: 300px;
+  width: 200px;
+}
+
+.Main .product-size {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding: 10px;
+  color: #EAF6FF;
+}
+
+.Main .product-info {
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 100px;
+}
+
+.Main .product-info .product-price {
+  color: #3A3A3A;
+}
+
+.Main .product-info .product-button {
+  position: absolute;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  bottom: 0;
+  right: 0px;
+  padding: 0.5rem;
+  border: 2px solid #009FFD;
+  border-radius: 5px;
+}
+
+.Main .product-info .product-button:hover {
+  background-color: #009FFD;
+  color: #EAF6FF;
+}
+/*# sourceMappingURL=style.css.map */
