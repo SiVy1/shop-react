@@ -2,14 +2,12 @@ import React from 'react'
 import data from './data.json'
 import './style/style.css'
 
-export default function Main({addCartCount, addCartItems}) {
-    function addCount(){
+export default function Main({addCartCount, addCartItems, cartItems}) {
+    const handleChange = event => {
+        addCartItems(prev => [...prev,event.target.value]);
         addCartCount(prev => prev + 1)
-    }
-
-    function addItem(){
-        addCartItems(prevItems => prevItems + "siema")
-    }
+        console.log('value is:', event.target.value);
+      };
     const product = data.map(item => 
     <div className='product' key={item.id}>
         <div className='product-img-con'>
@@ -18,8 +16,8 @@ export default function Main({addCartCount, addCartItems}) {
         </div>
         <div className='product-info'>
             <span>{item.name}</span>
-            <span className='product-price'>{item.price}</span>
-            <button className='product-button' onClick={addCount} onClick={addItem}>Dodaj do koszyka</button>
+            <span className='product-price'>{item.price}zł</span>
+            <button className='product-button' value={item.name} onClick={handleChange}>Dodaj do koszyka</button>
         </div>
     </div>
     )

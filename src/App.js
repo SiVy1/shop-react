@@ -9,10 +9,14 @@ function App() {
   const [cartItems, addCartItems] = useState([])
   return (
     <div className="App">
-      <Navbar itemCount={cartCount}/>
+      <Navbar 
+      itemCount={cartCount}
+      cartItems={cartItems}
+      />
       <Main 
       addCartCount={addCartCount} 
       addCartItems={addCartItems}
+      cartItems={cartItems}
       />
     </div>
   );

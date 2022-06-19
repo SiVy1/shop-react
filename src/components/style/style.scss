@@ -21,6 +21,7 @@
         display: flex;
         align-items: flex-end;
         flex-direction: column;
+        z-index: 999;
         .cart-items{
             position: absolute;
             right: 0;
@@ -31,11 +32,13 @@
             width: 25px;
             height: 25px;
             padding: 2px;
+            float: left;
         }
         .cart-con{
             background-color: #EAF6FF;
             border-radius: 10px;
             padding: 10px;
+            float: left;
         }
     }
     .cart-icon{

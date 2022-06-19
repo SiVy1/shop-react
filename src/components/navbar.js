@@ -7,6 +7,13 @@ export default function Navbar(props) {
   function visibleToggle(){
     setIsVisible(prev => !prev)
   }
+  console.log(props.cartItems)
+  const cartProducts = props.cartItems.map(item =>{
+    console.log(item)
+    return(
+    <p>{item}</p>
+    )
+  })
   return (
     <nav className='navbar'>
       <input className='search-bar'></input>
@@ -14,9 +21,7 @@ export default function Navbar(props) {
         <img className='cart-icon' src='https://static.vecteezy.com/system/resources/previews/004/999/463/original/shopping-cart-icon-illustration-free-vector.jpg' alt='cart-icon'></img>
         <span className='cart-items'>{props.itemCount}</span>
         <div className='cart-con' style={{visibility: isVisible ? 'visible' : 'hidden'}}>
-            <p>sdsds</p>
-            <p>sdsds</p>
-            <p>sdsds</p>
+            <p>{cartProducts}</p>
         </div>
       </div>
     </nav>
